@@ -1,0 +1,111 @@
+
+/* Footer Css  */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 100px 50px;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+footer section {
+    width: 20%;
+    min-width: 250px;
+}
+
+
+.footer-logo, .footer-section-subheading {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.footer-logo i {
+    color: var(--orange);
+}
+
+footer section:nth-of-type(1) {
+    font-size: .8rem;
+    color: rgb(224, 222, 222);
+    line-height: 1.7;
+}
+footer section:nth-of-type(2) .footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} .footer-links a{
+    color: var(--white);
+    transition: .5s;
+    font-size: .9rem;
+} .footer-links a:hover {
+    color: var(--orange);
+}
+
+
+.socials {
+    display: flex;
+    gap: 30px;
+}
+.socials a {
+    color: var(--white);
+    font-size: 1.2rem;
+    transform: .5s;
+}
+.socials a:hover {
+    transform: scale(.99);
+    color: var(--orange);
+}
+
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-space div:nth-of-type(1) {
+    display: flex;
+    gap: 5px;
+    font-size: .9rem;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ft-number {
+    font-size: .8rem;
+    color: rgb(221, 220, 220);
+}
+.fm-mail {
+    font-size: .8rem;
+    text-decoration: underline;
+    color: rgb(221, 220, 220);
+}
+
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    font-size: .8rem;
+    color: var(--white);
+    background-color: rgb(57, 57, 57);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+
+    footer {
+        padding: 90px 20px;
+    }
+}
+

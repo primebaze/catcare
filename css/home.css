@@ -1,0 +1,220 @@
+/* Homepage CSS Styling  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* the root here are used to target colors  */
+
+:root {
+    --white: #ffff;
+
+    --black: #000;
+
+    --orange: orangered;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* all about header styling starts here  */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/img17.jpeg);
+    color: var(--white);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    max-width: 60%;
+    margin-bottom: 30px;
+    animation-name: textmove;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+header h1 span {
+    color: var(--orange);
+}
+
+header h2 {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 300;
+    animation-name: textmove;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+header p {
+    font-size: .8rem;
+    max-width: 50%;
+    line-height: 1.6;
+    color: rgb(217, 217, 217);
+    animation-name: textmove;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+
+@keyframes textmove {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+}
+/* all about header styling ends  here */
+
+/* all introduction of about cat care in home page starts here  */
+/* i used the same class name to target both about and cat guide on the home page  */
+.main-container {
+    display: flex;
+    gap: 30px;
+    margin: 50px 0;
+    padding: 20px 50px;
+}
+
+.main-text {
+    width: 30%;
+    min-width: 300px;
+}
+
+.main-text-content {
+    font-size: .9rem;
+    line-height: 1.7;
+    margin: 10px;
+}
+
+.mt-btn {
+    display: block;
+    padding: 15px 25px;
+    border-radius: 70px;
+    width: fit-content;
+    font-size: 1.1rem;
+    color: var(--white);
+    background-color: var(--orange);
+    margin-top: 20px;
+    transition: .5s;
+}.mt-btn:hover {
+    background-color: var(--black);
+}
+
+.cat-images {
+    display: flex;
+    gap: 20px;
+}
+
+.cat-images figure {
+    width: 50%;
+    overflow: hidden;
+    max-height: 500px;
+}
+.cat-images figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.cat-images figure.ci {
+    width: 100%;
+}
+/* all introduction of about cat care in home page ends here */
+
+
+
+
+
+
+/* media query of the home page of 900px screen size */
+@media screen and (max-width: 900px) {
+    header h1 {
+        font-size: 2rem;
+        max-width: 75%;
+    }
+    
+    header h2 {
+        font-size: 1.3rem;
+        max-width: 80%;
+    }
+    
+    header p {
+        font-size: .8rem;
+        max-width: 80%;
+    }
+}
+
+
+/* media query of the home page of 850px screen size */
+@media screen and (max-width: 850px){
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-text {
+        width: 100%;
+    }
+}
+
+/* media query of the home page of 700px screen size */
+@media screen and (max-width: 700px){
+    
+    header h1 {
+        max-width: 85%;
+    }
+    
+    header h2 {
+        max-width: 95%;
+    }
+    
+    header p {
+        font-size: .8rem;
+        max-width: 95%;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+}
+
+/* media query of the home page of 600px screen size */
+@media screen and (max-width: 600px) {
+    header {
+        background-position: center;
+    }
+}

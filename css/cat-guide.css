@@ -1,0 +1,304 @@
+
+ /* Cat guide css  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* the body and html styling of cat guides  */
+body,html {
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.header-text h1 {
+    font-size: .8rem;
+    max-width: 50%;
+    line-height: 1.6;
+    color: rgb(217, 217, 217);
+}
+
+.header-text h3 {
+    font-size: 20px;
+    color: rgb(217, 217, 217);
+    background-color: black;
+    text-align: center;
+   margin-right: auto;
+    width: 40%;
+    height: 10%;
+}
+
+
+:root {
+    --white: #ffff;
+
+    --black: #000;
+
+    --orange: orangered;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* header of cat care guide that provide information on how to treat your cats  */
+header {
+    height: calc(80vh - 80px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images//pexels-photo-2352276.jpeg);
+    color: var(--black);
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+/* header content  */
+.header-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    line-height: 1.6;
+}
+
+/* styling of header-text h1  */
+.header-text h1 {
+    font-size: 2.5rem;
+    width: 70%;
+    padding-left: 15%;
+}
+
+/* styling of header-text h3  */
+.header-text h3 {
+    font-weight: 100;
+    padding-left: 20%;
+}
+
+/* styling of header-text a tag  */
+.header-text a {
+    display: block;
+    padding: 15px 25px;
+    border-radius: 70px;
+    width: fit-content;
+    font-size: .9rem;
+    color: var(--white);
+    background-color: var(--orange);
+    margin-top: 20px;
+    transition: .5s;
+    margin-left: 20%;
+}.header-text a:hover {
+    background-color: var(--black);
+}
+/* header section ends here  */
+
+/* all about cat care guide about starts here  */
+/* the containner of about cat guide  */
+.about-cat-guide {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+/* the h2 styling of about cat guide  */
+.about-cat-guide h2 {
+    margin-bottom: 10px;
+}
+
+/* the h2 styling of about cat guide */
+.about-cat-guide p {
+    line-height: 1.4;
+}
+
+/* the styling of about cat guide videa  */
+.about-cat-guide video {
+    display: block;
+    width: 50%;
+    height: fit-content;
+}
+/* about cat guide and its container ends here */
+.cat-guide-container {
+    padding: 20px 50px;
+    line-height: 1.6;
+    background-color: rgb(235, 255, 255);
+}
+
+.cat-guide-container h1 {
+    margin-bottom: 15px;
+}
+.cat-guide-container .cgc-h4 {
+    margin-bottom: 25px;
+}
+
+
+/* all about the cat guide main contents are all listed here because the styling are all targeted at the same place  */
+.div1_fullcontent, 
+.div2_fullcontent, 
+.div3_fullcontent, 
+.div4_fullcontent, 
+.div5_fullcontent {
+    display: flex;
+    height: 0px;
+    overflow-y: hidden;
+    position: relative;
+    top: 0px;
+    flex-direction: column;
+    gap: 20px;
+    transition: .5s;
+}
+
+/* here is all about the "read more styling"  */
+.dfc.active {
+    height: fit-content;
+}
+
+#read-more {
+    cursor: pointer;
+    color: rgb(0, 170, 255);
+}
+/* all about the "read more styling ends here  */
+
+/* the styling here is all about online site  */
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    margin: 50px 0;
+    padding: 20px 50px;
+    width: 35%;
+    background-color:  rgb(235, 255, 255);
+}
+
+.a-text{
+    text-decoration: none;
+}
+.a-text a {
+    display: block;
+    padding: 5px 5px;
+    border-radius: 20px;
+    width: fit-content;
+    font-size: .9rem;
+    color: var(--white);
+    background-color: var(--orange);
+    margin-top: 20px;
+    transition: .5s;
+    margin-left: 0%;
+    text-decoration: none;
+
+}
+
+.a-text a:hover {
+    background-color: var(--black);
+}
+
+
+.mt-btn {
+    display: block;
+    padding: 15px 25px;
+    border-radius: 70px;
+    width: fit-content;
+    font-size: 1.1rem;
+    color: var(--white);
+    background-color: var(--orange);
+    margin-top: 20px;
+    transition: .5s;
+}.mt-btn:hover {
+    background-color: var(--black);
+}
+
+
+.cat-vet-sites img{
+    width: 100%;
+    height: fit-content;
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.cvs-text {
+    padding: 50px;
+}
+.cvs-text h2{
+    margin-bottom: 20px;
+}
+.cvs-text ul {
+    padding-left: 20px;
+    line-height: 2;
+    list-style-type: square;
+}
+.cvs-text ul a{
+    text-decoration: underline;
+}
+/* the styling here is all about online site ends here  */
+
+
+/* here is all about using media query to make the website responsive in all screen sizes  */
+@media screen and (max-width: 950px) {
+    header {
+        height: calc(100vh - 80px);
+    }
+    .header-text {
+        padding: 20px;
+    }
+    .header-text h1 {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .about-cat-guide {
+        padding: 20px;
+    }
+
+    .cat-guide-container {
+        padding: 10px;
+    }
+
+    .cvs-text {
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+    .about-cat-guide {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-cat-guide video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-position: center;
+    }
+
+    .header-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .header-text h3 {
+        font-size: 1rem;
+    }
+
+}
